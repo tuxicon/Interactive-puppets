@@ -1,0 +1,136 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement (e.g. for preprints). 
+% Consult the conference website for the camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+% \toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is 	granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. \\
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission. 
+% Remove this line to eliminate page numbers for the camera ready copy
+\pagenumbering{arabic}
+
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage{url}      % llt: nicely formatted URLs
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, 
+% to give it a fighting chance of not being over-written, 
+% since its job is to redefine many LaTeX commands.
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+pdftitle={SIGCHI Conference Proceedings Format},
+pdfauthor={LaTeX},
+pdfkeywords={SIGCHI, proceedings, archival format},
+bookmarksnumbered,
+pdfstartview={FitH},
+colorlinks,
+citecolor=black,
+filecolor=black,
+linkcolor=black,
+urlcolor=black,
+breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+\newcommand\tabhead[1]{\small\textbf{#1}}
+
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{PuppetMaster: Fabricating Interactive Puppets for Manipulating Interaction Space around Public Displays}
+
+\numberofauthors{3}
+\author{
+  \alignauthor 1st Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}
+  \alignauthor 2nd Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}    
+  \alignauthor 3rd Author Name\\
+    \affaddr{Affiliation}\\
+    \affaddr{Address}\\
+    \email{e-mail address}\\
+    \affaddr{Optional phone number}
+}
+
+\maketitle
+
+\begin{abstract}
+
+Increasingly wide number of animated characters with range of kinematic motions are being 3D printed. However once printed, the functional use of such characters remain constant and non-interactive. In this paper we examine approaches to fabricate functional interactive puppets that can be applied for variety of interactive tasks to help users ranging from public displays to touch screen devices. In addition to interactive tasks the kinematic motions and behaviors of such puppets are of great importance in settings where they are deployed autonomously. We demonstrate the potential of such puppets through three field studies with public displays. 
+
+\end{abstract}
+
+\keywords{
+3D printing, fabrication, motion input, gestures, interactive characters, public displays
+}
+
+\category{H.5.m.}{Information Interfaces and Presentation (e.g. HCI)}{Miscellaneous}
+
+\section{Introduction}
+
+Robotic assistants \cite{somanath_spidey:_2012}, \cite{pedersen_tangible_2011}, \cite{somanath_integrating_2013} for accomplishing interactive tasks are increasingly gaining interest in the scientific community. Designing such robotic assistants for tasks specific to interaction remains a challenge due to a range of input motions involved in accomplishing the tasks. Fabrication of mechanical characters \cite{cali_3d-printing_2012}, \cite{skouras_computational_2013}, \cite{coros_computational_2013} that perform motion based on user input are being explored. This opens up avenues for fabricating puppets for specific interaction tasks based on the motions desired by the interaction designers. 
+
+Apart from being able to control such puppets for interaction tasks, they can be deployed "in the wild" to help facilitate interaction with devices such as public displays. Public displays in the past have suffered from Interaction blindness \cite{} and display blindness \cite{}. Previous studies  \cite{ju_animate_2010}, \cite{Houben:2013:OIB:2468356.2468631}, \cite{breazeal_public_2002}  have shown that external physical objects with motion can encourage interaction with public display and can help in overcoming such blindness problems. 
+
+Hence in this paper we examine address these problems through following contributions
+
+\begin{itemize}
+
+\item We introduce methods for fabricating interactive puppets that perform a range of motions based on desired input motions. 
+
+\item Example applications for how such puppets can be utilized in interactive tasks and behaviors in interactive context
+
+\item We present the results of such puppets in an in the wild study and also report on various usages with public displays 
+
+\end{itemize}
+
+ 
+
+
+
+
+\section{Background}
+
+
+\subsection{Digital fabrication: Tools and Systems}
+
+\subsection{}
+
+
+\bibliographystyle{acm-sigchi}
+\bibliography{UIST2014}
+\end{document}

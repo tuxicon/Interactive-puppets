@@ -1,0 +1,59 @@
+\begin{thebibliography}{1}
+
+\bibitem{breazeal_public_2002}
+Breazeal, C., Brooks, A., Hancher, M., Strickon, J., Kidd, C., {McBean}, J.,
+  and Stiehl, D.
+\newblock Public anemone: An organic robot creature.
+\newblock In {\em {ACM} {SIGGRAPH} 2002 Conference Abstracts and Applications},
+  {SIGGRAPH} '02, {ACM} (New York, {NY}, {USA}, 2002), 76–76.
+
+\bibitem{cali_3d-printing_2012}
+Calì, J., Calian, D.~A., Amati, C., Kleinberger, R., Steed, A., Kautz, J., and
+  Weyrich, T.
+\newblock {3D-printing} of non-assembly, articulated models.
+\newblock {\em {ACM} Trans. Graph. 31}, 6 (Nov. 2012), 130:1–130:8.
+
+\bibitem{coros_computational_2013}
+Coros, S., Thomaszewski, B., Noris, G., Sueda, S., Forberg, M., Sumner, R.~W.,
+  Matusik, W., and Bickel, B.
+\newblock Computational design of mechanical characters.
+\newblock {\em {ACM} Trans. Graph. 32}, 4 (July 2013), 83:1–83:12.
+
+\bibitem{Houben:2013:OIB:2468356.2468631}
+Houben, S., and Weichel, C.
+\newblock Overcoming interaction blindness through curiosity objects.
+\newblock In {\em CHI '13 Extended Abstracts on Human Factors in Computing
+  Systems}, CHI EA '13, ACM (New York, NY, USA, 2013), 1539--1544.
+
+\bibitem{ju_animate_2010}
+Ju, W., and Sirkin, D.
+\newblock Animate objects: How physical motion encourages public interaction.
+\newblock In {\em Persuasive Technology}, T.~Ploug, P.~Hasle, and
+  H.~Oinas-Kukkonen, Eds., no.~6137 in Lecture Notes in Computer Science.
+  Springer Berlin Heidelberg, Jan. 2010, 40--51.
+
+\bibitem{pedersen_tangible_2011}
+Pedersen, E.~W., and Hornbæk, K.
+\newblock Tangible bots: Interaction with active tangibles in tabletop
+  interfaces.
+\newblock In {\em Proceedings of the {SIGCHI} Conference on Human Factors in
+  Computing Systems}, {CHI} '11, {ACM} (New York, {NY}, {USA}, 2011),
+  2975–2984.
+
+\bibitem{skouras_computational_2013}
+Skouras, M., Thomaszewski, B., Coros, S., Bickel, B., and Gross, M.
+\newblock Computational design of actuated deformable characters.
+\newblock {\em {ACM} Trans. Graph. 32}, 4 (July 2013), 82:1–82:10.
+
+\bibitem{somanath_spidey:_2012}
+Somanath, S., Sharlin, E., and Costa~Sousa, M.
+\newblock Spidey: a robotic tabletop assistant.
+\newblock No.
+
+\bibitem{somanath_integrating_2013}
+Somanath, S., Sharlin, E., and Sousa, M.
+\newblock Integrating a robot in a tabletop reservoir engineering application.
+\newblock In {\em 2013 8th {ACM/IEEE} International Conference on Human-Robot
+  Interaction ({HRI)}} (2013), 229--230.
+
+\end{thebibliography}
