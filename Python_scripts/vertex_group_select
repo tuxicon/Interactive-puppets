@@ -1,0 +1,41 @@
+bpy.ops.object.mode_set(mode='OBJECT')
+
+obj = bpy.context.object
+
+def MakeMaterial_1():
+    mat = bpy.data.materials.new("Mat1")
+    mat.diffuse_shader = 'MINNAERT'
+    mat.diffuse_color = (0.0, 0.288, 0.0)
+    mat.darkness = 0.8
+    return mat
+
+def MakeMaterial_2():
+    mat = bpy.data.materials.new("Mat2")
+    mat.diffuse_shader = 'MINNAERT'
+    mat.diffuse_color = (0.288, 0.0, 0.0)
+    mat.darkness = 0.8
+    return mat
+
+ 
+#Assign first material on all the mesh
+bpy.ops.object.material_slot_add() #Add a material slot
+obj.material_slots[obj.material_slots.__len__() - 1].material = MakeMaterial_1() #Assign a material to the last slot
+bpy.ops.object.editmode_toggle()  #Go in edit mode
+bpy.ops.mesh.select_all(action='SELECT') #Select all the vertices
+bpy.ops.object.material_slot_assign() #Assign the material on all the vertices
+bpy.ops.object.editmode_toggle()  #Return in object mode
+
+
+
+obj = bpy.context.scene.objects.active
+vg_name = obj.vertex_groups.active.name
+for obj in bpy.data.objects:
+    for vg in obj.vertex_groups:
+        bpy.ops.object.vertex_group_set_active(group='Bone.001') 
+        bpy.ops.object.material_slot_add() #Add a material slot
+        obj.material_slots[obj.material_slots.__len__() - 1].material = MakeMaterial_2() #Assign a material to the last slot
+        bpy.ops.object.mode_set(mode='EDIT')  #Go in edit mode
+        bpy.ops.object.vertex_group_select()
+        bpy.ops.object.material_slot_assign() #QAssign the material on the selected vertices 
+        print(vg.name,vg.weight)
+    
