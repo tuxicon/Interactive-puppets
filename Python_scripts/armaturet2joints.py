@@ -2,8 +2,6 @@ import bpy
 
 arm = bpy.data.objects.get('Armature')
 
-
-
 def armature_prepare(arm):
     if arm is not None and bpy.ops.object.mode_set.poll():
         bpy.ops.object.mode_set(mode='OBJECT')
