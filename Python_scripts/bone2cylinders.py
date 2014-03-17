@@ -58,10 +58,10 @@ for i in range(bcount):
     bone.edit_bones[count].select_head = True
     bone.edit_bones[count].select_tail = True
     scn.objects[oname].data.edit_bones.active = bone.edit_bones[count]
-    print(bone.edit_bones[count].length)
     bpy.ops.view3d.snap_cursor_to_selected()
-    msh.primitive_cylinder_add(vertices=cv,radius=rad*sclr,depth=bone.edit_bones[count].length,end_fill_type=listEF[cf])
+    print(bone.edit_bones[count].vector)
+    msh.primitive_cylinder_add(vertices=cv,radius=rad*sclr,depth=bone.edit_bones[count].length)
     count += 1
     bpy.ops.view3d.snap_selected_to_cursor()
     
-bpy.context.area.type = 'TEXT_EDITOR'
+bpy.context.area.type = 'TEXT_EDITOR'   
